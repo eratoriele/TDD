@@ -3,28 +3,32 @@ public class Main {
 
     public String grades(int num) {
 
-        String result = "Not an applicable integer";
+        String result = "";
 
-        if (num == 12) {
-            result = "Excellent";
-        }
-        else if (num == 10){
-            result = "Very Good";
-        }
-        else if (num == 7){
-            result = "Good";
-        }
-        else if (num == 4){
-            result = "Fair";
-        }
-        else if (num == 2){
-            result = "Adequate";
-        }
-        else if (num == 0){
-            result = "Inadequate";
-        }
-        else if (num == -3){
-            result = "Fail";
+        switch (num) {
+            case 12:
+                result = "Excellent";
+                break;
+            case 10:
+                result = "Very Good";
+                break;
+            case 7:
+                result = "Good";
+                break;
+            case 4:
+                result = "Fair";
+                break;
+            case 2:
+                result = "Adequate";
+                break;
+            case 0:
+                result = "Inadequate";
+                break;
+            case -3:
+                result = "Fail";
+                break;
+            default:
+                result = "Not an applicable integer";
         }
 
         return result;
