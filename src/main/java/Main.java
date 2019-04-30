@@ -3,7 +3,7 @@ public class Main {
 
     public String grades(int num) {
 
-        String result = "Not an appliable integer";
+        String result = "Not an applicable integer";
 
         if (num == 12) {
             result = "Excellent";
@@ -18,10 +18,10 @@ public class Main {
             result = "Fair";
         }
         else if (num == 2){
-            result = "Adequete";
+            result = "Adequate";
         }
         else if (num == 0){
-            result = "Inadequete";
+            result = "Inadequate";
         }
         else if (num == -3){
             result = "Fail";

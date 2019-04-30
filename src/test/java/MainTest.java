@@ -10,7 +10,6 @@ public class MainTest{
         String returnedVal = m_TEST.grades(12);
         assertEquals("Excellent", returnedVal);
     }
-
     @Test
     public void testGrades10() {
         String returnedVal = m_TEST.grades(10);
@@ -29,12 +28,12 @@ public class MainTest{
     @Test
     public void testGrades2() {
         String returnedVal = m_TEST.grades(2);
-        assertEquals("Adequete", returnedVal);
+        assertEquals("Adequate", returnedVal);
     }
     @Test
     public void testGrades00() {
-        String returnedVal = m_TEST.grades(0);
-        assertEquals("Inadequete", returnedVal);
+        String returnedVal = m_TEST.grades(00);
+        assertEquals("Inadequate", returnedVal);
     }
     @Test
     public void testGrades_3() {
@@ -44,7 +43,7 @@ public class MainTest{
     @Test
     public void testGrades5() {
         String returnedVal = m_TEST.grades(5);
-        assertEquals("Not an appliable integer", returnedVal);
+        assertEquals("Not an applicable integer", returnedVal);
     }
 
 }
