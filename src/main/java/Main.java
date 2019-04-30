@@ -1,13 +1,13 @@
 
-public class Main {
+public class Main {         // Should have changed the name
 
-    public String grades(int num) {
+    public String grades(int input) {
 
-        String result = "";
+        String result;
 
-        switch (num) {
+        switch (input) {
             case 12:
-                result = "Excellent";
+                result = "Excellent";           // Maybe return here instead of breaking?
                 break;
             case 10:
                 result = "Very Good";
@@ -35,7 +35,6 @@ public class Main {
     }
 
     public static void main(String args[]) {
-
 
 
     }

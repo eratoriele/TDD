@@ -41,9 +41,14 @@ public class MainTest{
         assertEquals("Fail", returnedVal);
     }
     @Test
-    public void testGrades5() {
+    public void testGrades5() {                             // Any number outside of the range would be fine
         String returnedVal = m_TEST.grades(5);
         assertEquals("Not an applicable integer", returnedVal);
+    }
+    @Test
+    public void testGradesString() {                        // If it works with Integer or not
+        String returnedVal = m_TEST.grades(new Integer("4"));
+        assertEquals("Fair", returnedVal);
     }
 
 }
